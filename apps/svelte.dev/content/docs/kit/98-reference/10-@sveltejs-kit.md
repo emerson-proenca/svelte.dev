@@ -1112,7 +1112,10 @@ You must specify a `path` for the cookie. In most cases you should explicitly se
 <div class="ts-block-property">
 
 ```dts
-delete: (name: string, opts: import('cookie').CookieSerializeOptions & { path: string }) => void;
+delete: (
+	name: string,
+	opts: import('cookie').CookieSerializeOptions & { path: string }
+) => void;
 ```
 
 <div class="ts-block-property-details">
@@ -3070,7 +3073,10 @@ interface ResolveOptions {/*…*/}
 <div class="ts-block-property">
 
 ```dts
-transformPageChunk?: (input: { html: string; done: boolean }) => MaybePromise<string | undefined>;
+transformPageChunk?: (input: {
+	html: string;
+	done: boolean;
+}) => MaybePromise<string | undefined>;
 ```
 
 <div class="ts-block-property-details">
