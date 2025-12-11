@@ -28,7 +28,7 @@ function render<
 					? ComponentType<Comp>
 					: Comp,
 				options?: {
-					props?: Omit<Props, '$$slots' | '$$events'>;
+					props?: NoInfer<Props>;
 					context?: Map<any, any>;
 					idPrefix?: string;
 				}
@@ -38,7 +38,7 @@ function render<
 					? ComponentType<Comp>
 					: Comp,
 				options: {
-					props: Omit<Props, '$$slots' | '$$events'>;
+					props: NoInfer<Props>;
 					context?: Map<any, any>;
 					idPrefix?: string;
 				}
